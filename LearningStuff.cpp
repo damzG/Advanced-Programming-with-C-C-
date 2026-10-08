@@ -22,6 +22,9 @@ int main()
 
         String methods - length(), empty(), clear(), append(), at(),
         insert(), find(), erase()
+
+        fill() - fills a range of elements with a specified value
+        fill(begin, end, value)
      */
         //Pass an array to a afunction
 
@@ -30,6 +33,10 @@ int main()
     double total = getTotal1(prices, size);
 
     std::cout << "$" << total;
+
+
+    std::string foods[100];
+    fill_n(foods, 10, "caffeine");
     return 0;
 }
 
