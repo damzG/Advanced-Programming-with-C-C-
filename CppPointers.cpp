@@ -18,4 +18,45 @@ int main()
     std::cout << *p_name;
     std::cout << *pAge;
     std::cout << freePizzas; //shows memory address
+
+    //Null Pointers
+
+    int *pointer = nullptr;
+    int x = 123;
+
+    pointer = &x;
+
+    if (pointer != nullptr)
+    {
+        printf("Address was asssigned");
+    }
+    else
+    {
+        printf("Address Was not assigned");
+    }
+
+    //Dynamic Memory
+    /*
+     * Memory that is allocated after the program is already compiled & running
+     * Use the 'new' operator to allocate memory in the heap rather than the stack
+     */
+
+    int *pNum = NULL;
+    pNum =  new int; //dynamic memory
+    *pNum = 5;
+
+    printf("Address: %p\n", pNum);
+    printf("Value: %d\n", *pNum);
+
+    delete pNum; //to prevent memory leakage
+
+    char *pGrades = NULL;
+
+    int size = scanf("How many grades to enter in? ");
+    pGrades = new char[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        pGrades[i] = 'A';
+    }
 }
