@@ -4,4 +4,7 @@ project(AdvancedProgrammingLabs)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(AdvancedProgrammingLabs main.cpp
-        Lab1.cpp)
+        Lab1.cpp
+        Revision1.cpp
+        Revision2.cpp
+        CppObjectOriented.cpp)
