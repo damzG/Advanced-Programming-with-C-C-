@@ -214,6 +214,8 @@ int run() {
 
         std::cout << "Concatenated: " << dest << std::endl;
 
+        std::cout << "Done with revision" << endl;
+
     return 0;
 
 }
